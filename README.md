@@ -62,7 +62,7 @@ A modern, high-performance Retail Management and Billing System built with **Rea
 
 | Dashboard & Analytics | GST Invoicing |
 | :---: | :---: |
-| ![Dashboard](https://via.placeholder.com/600x400?text=Sales+Analytics+Chart) | ![Invoice](https://via.placeholder.com/600x400?text=GST+Invoice+Preview) |
+| ![Dashboard](screenshots/dashboard.png) | ![Invoice](screenshots/invoice.png) |
 
 ---
 
