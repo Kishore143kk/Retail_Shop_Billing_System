@@ -2,18 +2,76 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Retail Shop Billing System
+# 🛍️ Retail Shop Billing System
 
-This contains everything you need to run your app locally.
+A modern, high-performance Retail Management and Billing System built with **React**, **Vite**, **Express**, and **SQLite**. This system is designed to streamline retail operations with automated GST invoicing, WhatsApp integration, and AI-powered sales insights.
 
-View your app in AI Studio: https://ai.studio/apps/e5c06e57-2a17-4449-bb55-9e5f7b05f13b
+---
 
-## Run Locally
+## ✨ Key Features
 
-**Prerequisites:** Node.js
+- **🧾 Modern Billing & Invoicing**: Generate professional GST-compliant invoices instantly.
+- **💹 Sales Analytics Dashboard**: Visualized sales trends over time using interactive Area Charts.
+- **📲 WhatsApp Integration**: Share digital invoices directly with customers via WhatsApp with one click.
+- **📦 Inventory Management**: Track stock levels in real-time with "Low Stock" alerts and easy product management.
+- **🤖 AI Insights**: Integrated with Google Gemini AI to provide sales predictions and smart stock suggestions based on history.
+- **🇮🇳 Localization**: Full support for Indian Rupee (₹) currency and GST (CGST/SGST) tax structures.
+- **🌓 Premium UI**: A clean, responsive dashboard designed with sleek glassmorphism and smooth animations.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in .env to your Gemini API key (copied from .env.example)
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19 (Vite), Tailwind CSS, Lucide React, Framer Motion (Motion).
+- **Backend**: Node.js & Express.
+- **Database**: Better-SQLite3 (Local, lightweight relational database).
+- **AI**: Google Generative AI (Gemini Flash).
+- **Visuals**: Recharts for data visualization.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Kishore143kk/Retail_Shop_Billing_System.git
+   cd Retail_Shop_Billing_System
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup:**
+   Create a `.env` file in the root directory (using `.env.example` as a template):
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+4. **Run the application:**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
+
+---
+
+## 📸 Project Screenshots
+
+| Dashboard & Analytics | GST Invoicing |
+| :---: | :---: |
+| ![Dashboard](https://via.placeholder.com/600x400?text=Sales+Analytics+Chart) | ![Invoice](https://via.placeholder.com/600x400?text=GST+Invoice+Preview) |
+
+---
+
+## 📝 License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🤝 Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
