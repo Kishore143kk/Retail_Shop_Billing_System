@@ -46,8 +46,8 @@ export default function Invoice() {
 
   const handleWhatsApp = () => {
     if (!bill) return;
-    const itemsText = bill.items?.map(i => `- ${i.product_name} x${i.quantity} : ₹${i.total.toFixed(2)}`).join('%0A') || '';
-    const text = `*Retail Billing Pro - Invoice #BILL-${bill.id}*%0A%0A*Customer:* ${bill.customer_name || 'Walk-in Customer'}%0A*Date:* ${new Date(bill.date).toLocaleDateString()}%0A%0A*Order Details:*%0A${itemsText}%0A%0A*Subtotal:* ₹${subtotal.toFixed(2)}%0A*GST (18%):* ₹${gstAmount.toFixed(2)}%0A*Total Amount:* ₹${bill.total_amount.toFixed(2)}%0A%0AThank you for shopping with us!`;
+    const itemsText = bill.items?.map(i => `✅ *${i.product_name}*%0A   ${i.quantity} x ₹${i.price.toFixed(2)} = *₹${i.total.toFixed(2)}*`).join('%0A%0A') || '';
+    const text = `🚀 *Retail Billing Pro - Invoice #BILL-${bill.id}*%0A%0A👤 *Customer:* ${bill.customer_name || 'Walk-in Customer'}%0A📅 *Date:* ${new Date(bill.date).toLocaleDateString()}%0A%0A--- *ORDER DETAILS* ---%0A%0A${itemsText}%0A%0A----------------------%0A💰 *Subtotal:* ₹${subtotal.toFixed(2)}%0A📊 *GST (18%):* ₹${gstAmount.toFixed(2)}%0A⭐ *Total Amount:* ₹${bill.total_amount.toFixed(2)}%0A----------------------%0A%0A🙏 *Thank you for shopping with us! Visit again.*`;
     
     // Clean phone number (e.g. remove spaces/dashes), optionally pre-pend country code if missing
     let phone = bill.customer_phone ? bill.customer_phone.replace(/\D/g, '') : '';
